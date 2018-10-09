@@ -35,5 +35,6 @@ body {
 
 .verb h1 span:hover {
   color: red;
+  font-size: 50;
 
 }
