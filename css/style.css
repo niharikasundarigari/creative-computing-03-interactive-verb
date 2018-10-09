@@ -33,3 +33,7 @@ body {
   text-align: center;
 }
 
+.verb h1 span:hover {
+  color: red;
+
+}
