@@ -12,7 +12,20 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background: url(images/pattern.png) top left repeat, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAEBJREFUGBljsDt1/j8IMxAATATk8Us/uGH3H4SRVVFmIrJJcHbFebv/IAwXwMGgzOpPM+P+gzCy4ZSZiGwSjA0AMx4Wd4lKJLMAAAAASUVORK5CYII=) top left repeat ;
+  background-attachment: fixed;
+  background-position: top left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font: 12px Arial, Tahoma, Georgia, "Times New Roman", Times, serif;
+  color: #000;
+  margin-right: 30px ;
+
 }
+
+
 
 .center {
   position: absolute;
@@ -28,13 +41,59 @@ body {
   width: 100%;
 }
 
+.content {
+  font-size: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../images/pop.gif);
+  background-size: 55px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  background-color: gray;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background: url(../images/pop.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+h2. {
+  font-family: 'Source Sans Pro', sans-serif;
+  size: 10px;
+}
+
+h3. {
+  font-family: 'Source Sans Pro', sans-serif;
+  size: 10px;
+}
+
+h4.{
+  font-family: 'Source Sans Pro', sans-serif;
+  size: 10px;
+}
+
 .verb h1 {
-  font-size: 200px;
+  font-size: 300px;
   text-align: center;
+  font-family: 'Anton', sans-serif;
 }
 
 .verb h1 span:hover {
-  color: red;
-  font-size: 50;
+  color: skyblue;
+  font-size: 400px;
 
 }
+
