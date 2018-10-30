@@ -53,6 +53,7 @@ var R2= randomNumber(150,600);
 shape1.style.width = R1 + "px";
 shape1.style.height = R1 + "px";
 
+
 shape2.style.width = R2 + "px";
 shape2.style.height = R2 + "px";
 
