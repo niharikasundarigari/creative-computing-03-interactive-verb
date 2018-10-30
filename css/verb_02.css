@@ -10,20 +10,106 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
+  font-family: 'Lato', sans-serif;
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: auto;
-  width: auto;
+h1 {
+  margin-top: 0;
+  margin-bottom: 140px;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
 }
 
 .content {
   height: 100%;
+  min-height: 100vh;
   width: 100%;
+  padding: 20px;
+  background: #efefef;
 }
+
+.shape1 {
+  margin: 30px;
+  width: 200px;  
+  height: 200px;
+  background: red;
+  animation-name: redcircle;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.shape2 {
+  margin: 30px;
+  width: 200px;  
+  height: 200px;
+  background: blue;
+  animation-name: bluecircle;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.rectangle {
+width: 300px;
+height: 100px;
+}
+
+.circle {
+border-radius: 100px
+}
+
+
+
+@keyframes redcircle{
+0% {
+  transform: translate(100px,100px);
+  transform: translate(30);
+}
+25%{
+  transform: translateX(200px);
+}
+
+50%{
+  transform: translate(300px,300px);
+}
+
+75%%{
+  transform: translateY(500px);
+ }
+
+ 100%{
+  transform: translate(700px,700px);
+  transform: scale(40);
+ }
+}
+
+@keyframes bluecircle{
+  
+0% {
+  transform: translateX(100px);
+  transform: scale(20);
+}
+25%{
+  transform: translate(200px,200px);
+}
+
+50%{
+  transform: translateX(300px);
+}
+
+75%{
+  transform: translate(500px,500px);
+}
+
+100%{
+  transform: translateX(700px);
+  transform: scale(30);
+ }
+}
+
