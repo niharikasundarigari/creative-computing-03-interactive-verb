@@ -31,3 +31,24 @@ function randomFloat (min, max) {
   return parseFloat(value.toFixed(2));
 }
 
+var shape1 = document.querySelector(".shape1");
+
+//var width= randomNumber(150,700);
+//var height= randomNumber(150, 1000);
+
+//shape1.style.width = width + "px";
+//shape1.style.height = height + "px";
+
+
+var h = randomNumber(0, 359);
+
+shape1.style.background = hslColor(h, 50, 50);
+shape1.style.borderColor = hslColor(h, 90, 50);
+
+var container = document.querySelector(".content");
+
+container.style.background = hslColor(h, 50, 70);
+
+
+
+
