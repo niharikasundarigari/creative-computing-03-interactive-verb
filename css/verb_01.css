@@ -10,55 +10,92 @@ html {
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
-  font-family: 'Lato', sans-serif;
+  background: url(images/pattern.png) top left repeat, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAEBJREFUGBljsDt1/j8IMxAATATk8Us/uGH3H4SRVVFmIrJJcHbFebv/IAwXwMGgzOpPM+P+gzCy4ZSZiGwSjA0AMx4Wd4lKJLMAAAAASUVORK5CYII=) top left repeat ;
+  background-attachment: fixed;
+  background-position: top left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font: 12px Arial, Tahoma, Georgia, "Times New Roman", Times, serif;
+  color: #000;
+  margin-right: 30px ;
+
 }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 140px;
-  font-weight: 100;
-  font-size: 30px;
+h2. {
+  font-family: 'Source Sans Pro', sans-serif;
+  size: 10px;
 }
 
-a {
-  color: blue;
-  text-decoration: none;
+h3. {
+  font-family: 'Source Sans Pro', sans-serif;
+  size: 10px;
 }
 
-a:hover {
-  color: red;
+h4.{
+  font-family: 'Source Sans Pro', sans-serif;
+  size: 10px;
+}
+
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+  width: auto;
 }
 
 .content {
   height: 100%;
-  min-height: 100vh;
   width: 100%;
-  padding: 20px;
-  background: #efefef;
 }
 
-.shape {
-  margin-left: 100px;
-  width: 200px;  
-  height: 200px;
-  background: red;
-  transition-delay: 1s;
-  transition: all 3s;
+.content {
+  font-size: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../images/pop.gif);
+  background-size: 55px;
 }
 
-.content: hover{
-transform: rotateZ(3645deg) scale(1.5);
-
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-.content:hover a {
+.box {
+  width: 50%;
+  height: 50%;
+  background-color: gray;
   color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background: url(../images/pop.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
- .shape: hover {
-  transform: rotateZ(405deg) scale(1.5);
-  background-color: blue;
-  transition-timing-function: 
+
+
+
+.verb h1 {
+  font-size: 300px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
 }
+
+.verb h1 span:hover {
+  color: skyblue;
+  font-size: 400px;
+
+}
+
