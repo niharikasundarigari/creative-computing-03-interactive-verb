@@ -52,15 +52,18 @@ var R2= randomNumber(150,600);
 
 shape1.style.width = R1 + "px";
 shape1.style.height = R1 + "px";
+shape1.style.borderRadius = R1 + "px";
 
 
 shape2.style.width = R2 + "px";
 shape2.style.height = R2 + "px";
+shape2.style.borderRadius = R2 + "px";
 
 var h1 = randomNumber(0, 359);
 
 shape1.style.background = hslColor(h1, 50, 50);
 shape1.style.borderColor = hslColor(h1, 90, 50);
+
 
 var h2 = randomNumber(0, 359);
 
